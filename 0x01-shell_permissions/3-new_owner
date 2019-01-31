@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown betty:vagrant hello
+find $HOME \! -user $USER | sudo chown betty:$USER hello 
